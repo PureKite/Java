@@ -2,7 +2,7 @@
 ### [출처] Java의 정석 (남궁성)
 - [Ch1. 자바를 시작하기 전에](https://github.com/soocy0718/Java/tree/main/JavaBasic/src/Ch1)
 - [Ch2. 변수](https://github.com/soocy0718/Java/tree/main/JavaBasic/src/Ch2)
-- [Ch3. 연산자]()
+- [Ch3. 연산자](https://github.com/soocy0718/Java/tree/main/JavaBasic/src/Ch3)
 - [Ch4. 조건문과 반복문]()
 - [Ch5. 배열]()
 - [Ch6. 객체지향 프로그래밍1]()
