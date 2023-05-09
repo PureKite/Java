@@ -1,6 +1,6 @@
 package Ch4;
 
-public class FlowEX27 {
+public class FlowEx27 {
     public static void main(String[] args) {
         // for문에 LOOP1이라는 이름을 붙였다.
         Loop1 : for(int i =2; i <= 9; i++){
