@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Solution s = new Solution();
+        String[] a = {"classic", "pop", "classic", "classic", "pop"};
+        int[] b = {500, 600, 150, 800, 2500};
+        s.solution(a, b);
     }
 }
