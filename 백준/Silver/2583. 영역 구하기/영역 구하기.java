@@ -41,28 +41,29 @@ class Main {
             System.out.print(i + " ");
         }
     }
-    public static class Node{
-        int x;
-        int y;
-        Node(int x, int y){
-            this.x = x;
-            this.y = y;
-        }
-    }
+//    public static class Node{
+//        int x;
+//        int y;
+//        Node(int x, int y){
+//            this.x = x;
+//            this.y = y;
+//        }
+//    }
     public static int bfs(int x, int y){
-        Queue<Node> q= new LinkedList<>();
-        q.offer(new Node(x, y));
+        ArrayDeque<int []> q= new ArrayDeque<>();
+//        q.offer(new Node(x, y));
+        q.offer(new int[] {x, y});
         graph[x][y] = 1;
 
         int[] dx = {-1, 1, 0, 0};
         int[] dy = {0, 0, -1, 1};
         int count = 1;
         while(!q.isEmpty()){
-            Node node = q.poll();
-
+//            Node node = q.poll();
+            int[] dir = q.poll();
             for(int i = 0; i < 4; i++){
-                int nx = dx[i] + node.x;
-                int ny = dy[i] + node.y;
+                int nx = dx[i] + dir[0];
+                int ny = dy[i] + dir[1];
 
                 if(nx < 0 || nx >= n || ny < 0 || ny >= m){
                     continue;
@@ -70,7 +71,8 @@ class Main {
                 if (graph[nx][ny] == 0){
                     count++;
                     graph[nx][ny] = 1;
-                    q.offer(new Node(nx, ny));
+//                    q.offer(new Node(nx, ny));
+                    q.offer(new int[] {nx, ny});
                 }
             }
         }
